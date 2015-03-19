@@ -1,0 +1,22 @@
+<library path="lib/librqt_servo">
+	<class name="rqt_servo/MyPlugin" type="rqt_servo.controller.MyPlugin" base_class_type="rqt_gui_py::Plugin">
+		<description>A Python GUI plugin for a robotic telepresence system using Oculus Rift.</description>
+
+		<qtgui>
+			<group>
+				<label>OculusRift</label>
+				<icon type="theme">folder</icon>
+				<statustip>Plugins related to the oculus rift.</statustip>
+			</group>
+			<group>
+				<label>UC3M</label>
+				<icon type="theme">folder</icon>
+				<statustip>Plugins created by the UC3M.</statustip>
+			</group>
+
+			<label>Oculus Servo Plugin</label>
+			<icon type="theme">applications-other</icon>
+			<statustip>A Python GUI plugin for teleoperating a social robot with an	Oculus Rift.</statustip>
+		</qtgui>
+	</class>
+</library>

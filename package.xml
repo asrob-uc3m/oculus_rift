@@ -1,0 +1,49 @@
+<?xml version="1.0"?>
+<package format="2">
+	<name>rqt_servo</name>
+	<version>1.0.0</version>
+	<description>
+		The rqt_servo package.
+	</description>
+
+	<!-- Author tags are optional, mutiple are allowed, one per tag -->
+	<!-- Authors do not have to be maintianers, but could be -->
+	<author email="quique1090@gmail.com">Enrique Ruiz-Medrano Garcia</author>
+	<author email="raul.perula@uc3m.es">Raul Perula-Martinez</author>
+
+
+	<!-- One maintainer tag required, multiple allowed, one person per tag -->
+	<maintainer email="quique1090@gmail.com">Enrique Ruiz-Medrano Garcia</maintainer>
+
+
+	<!-- One license tag required, multiple allowed, one license per tag -->
+	<license>GPLv3</license>
+
+
+	<!-- Url tags are optional, but mutiple are allowed, one per tag -->
+	<url type="website">http://asrob.uc3m.es</url>
+	<url type="bugtracker">https://github.com/asrob-uc3m/oculus_rift/issues</url>
+	<url type="repository">https://github.com/asrob-uc3m/oculus_rift.git</url>
+
+
+	<!-- The *_depend tags are used to specify dependencies -->
+	<!-- Dependencies can be catkin packages or system dependencies -->
+	<buildtool_depend>catkin</buildtool_depend>
+
+	<!-- ROS packages dependencies -->
+	<depend>rospy</depend>
+	<depend>rqt_gui</depend>
+	<depend>rqt_gui_py</depend>
+	<depend>std_msgs</depend>
+	<depend>tf</depend>
+
+
+	<!-- The export tag contains other, unspecified, tags -->
+	<export>
+		<!-- Autogenerate documentation -->
+        <rosdoc config="rosdoc.yaml" />
+
+        <!-- Plugin config -->
+        <rqt_gui plugin="${prefix}/plugin.xml"/>
+	</export>
+</package>
